@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dinosaur</title>
 
     <style>
         body{
@@ -11,6 +11,7 @@
             flex-direction: column;
             justify-content: center;
             background-image: url(jungle.jpg);
+            align-items: center;
             
         }
 
@@ -24,14 +25,21 @@
         }
 
         .page{
-            background-color: black;
+            background-color: white;
             border-radius: 2em;
             margin: 10px;
+            opacity: 80%;
+            transition: 0.5s;
         }
         .page img{
             height: 300px;
             width: 600px;
             object-fit: contain;
+        }
+        .page:hover{
+            transform: translate(0px, -20px);
+            transition: 1s;
+            opacity: 110%;
         }
     </style>
 </head>
